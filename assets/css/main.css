@@ -225,7 +225,7 @@ h6 {
     transition: all ease 0.3s;
 }
 
-#slider .slide-img:hover .overlay{
+#slider .box:hover .overlay{
     visibility: visible;
     animation: fade 0.5s;
 }
