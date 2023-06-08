@@ -122,13 +122,21 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Glight Slider
    */
-  $(document).ready(function() {
     $('#autoWidth').lightSlider({
         autoWidth:true,
         loop:true,
         onSliderLoad: function() {
             $('#autoWidth').removeClass('cS-hidden');
         } 
-    });  
+    });
+
+      /**
+   * Initiate portfolio details lightbox 
+   */
+  const portfolioDetailsLightbox = GLightbox({
+    selector: '.portfolio-details-lightbox',
+    width: '90%',
+    height: '90vh'
   });
+  
 });
