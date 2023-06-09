@@ -1,0 +1,158 @@
+body {
+    display: grid;
+    place-items: center;
+    background: #fafafa;
+    font-family: 'Rubik', sans-serif;
+}
+
+.card {
+    position: relative;
+    padding: 25px;
+    background-color: #fff;
+    border: 2px solid #e1e3e6;
+    border-radius: 20px;
+    transition: .4s;
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card:hover {
+    border-color: #fff;
+    transform: translateY(-10px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .08);
+}
+
+.card .card-header h3 {
+    color: #404d61;
+    font-size: 28px;
+}
+
+.card .card-header p {
+    color: #757d8a;
+    font-size: 20px;
+}
+
+.card .card-header span {
+    position: absolute;
+    color: #f43c3c;
+    background: #fef0f0;
+    right: 25px;
+    top: 25px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.card .card-img {
+    position: relative;
+    object-fit: cover;
+    height: 300px;
+    border-radius: 12px;
+    margin: 22px 0;
+    overflow: hidden;
+}
+
+.card .card-img img {
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+}
+
+.card:hover .card-img img {
+    transform: scale(1.06);
+}
+
+.card .card-img i{
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #757d8a;
+    background: #fff;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.card .card-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .card-details .price p {
+    color: #757d8a;
+    font-size: 20px;
+}
+
+.card .card-details .price strong {
+    color: #545d6d;
+    font-size: 22px;
+}
+
+.card .card-details .colors {
+    display: flex;
+}
+
+.card .card-details .colors div {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.card .card-details .colors div:nth-child(1) {
+    background: linear-gradient(90deg, #b72c31, #efb9b0);
+}
+
+.card .card-details .colors div:nth-child(2) {
+    background: linear-gradient(90deg, #2c45b7, #b0b9ef);
+}
+
+.card .card-details .colors div:nth-child(3) {
+    background: linear-gradient(90deg, #31b72c, #b2efb0);
+}
+
+.card .card-details .colors div i {
+    display: flex;
+    color: #fff;
+    margin: 5px;
+    font-size: 25px;
+    opacity: 0;
+}
+
+.card .card-details .colors div.selected i {
+    opacity: 1;
+}
+
+.card .card-sizes {
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 0;
+}
+
+.card .card-sizes span {
+    cursor: pointer;
+    color: #757d8a;
+    background: #f1f2f3;
+    border-radius: 3px;
+    padding: 6px 12px;
+}
+
+.card .card-sizes span.selected {
+    color: #4e73f8;
+    background: #d5defe;
+}
+
+.card .card-footer button {
+    cursor: pointer;
+    width: 100%;
+    height: 26px;
+    border-radius: 12px;
+    background: linear-gradient(#333333, #030303);
+    color: #fff;
+    font-size: 12px;
+}
