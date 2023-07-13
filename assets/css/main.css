@@ -17,6 +17,32 @@
 }
 
 /*--------------------------------------------------------------
+  # Scrollbar
+  --------------------------------------------------------------*/
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: black white;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+/*--------------------------------------------------------------
   # General
   --------------------------------------------------------------*/
 body {
