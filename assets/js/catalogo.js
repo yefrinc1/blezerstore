@@ -17,4 +17,12 @@ $(document).ready(function(){
             $('#slider1').removeClass('cS-hidden');
         }
     });
+
+    $('#slider3').lightSlider({
+        autoWidth: true,
+        loop: true,
+        onSliderLoad: function () {
+            $('#slider1').removeClass('cS-hidden');
+        }
+    });
 });
